@@ -1,0 +1,38 @@
+# nudenet
+nudenet
+
+# nsfw_model
+tensorflow<=2.9.0
+tensorflow>=2.2.0;sys_platform != 'darwin'
+tensorflow_macos>=2.5.0;sys_platform == 'darwin'
+tensorflow-hub==0.12.0
+pillow
+
+# flask app
+numpy
+flask
+flask-cors
+gunicorn
+
+protobuf==3.20.1
+
+
+# celeb-detector
+cmake
+# celeb-detector # patched version inlcuded
+annoy
+keras-vggface
+keras-applications
+# Directly from repo
+# git+https://github.com/shobhit9618/celeb_recognition.git
+torch
+face_recognition
+annoy
+imutils
+opencv-python
+matplotlib
+numpy
+tqdm
+pillow
+onnx2torch
+requests
