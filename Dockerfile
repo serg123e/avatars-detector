@@ -16,5 +16,8 @@ COPY app /app
 # Expose port 5080 for the Flask app
 EXPOSE 80
 
+# Disable TensorFlow GPU warnings
+ENV TF_CPP_MIN_LOG_LEVEL=2
+
 # Run Unicorn when the container launches
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
